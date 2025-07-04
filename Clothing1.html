@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HomeKart Clothing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f6fcde;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .container img {
+      width: 100%;
+      filter: grayscale(70%) blur(5px);
+    }
+
+    .centered {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
+      font-weight: 1000;
+      color: #f5f5dc;
+      font-style: oblique;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .button {
+      background: rgba(0, 0, 0, 0.6);
+      border: none;
+      color: white;
+      padding: 20px 60px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background: #31511e;
+      transform: scale(1.05);
+    }
+
+    .button-row {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 30px 5%;
+      margin-top: 0;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-content a {
+      color: #85a64a;
+      text-decoration: none;
+    }
+
+    .social {
+      margin: 20px 0;
+    }
+
+    .social img {
+      width: 25px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .button-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .centered {
+        font-size: 2.5rem;
+      }
+
+      .button {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/clothing.jpg" alt="Clothing Cover">
+    <div class="centered">HomeKart</div>
+
+<br>
+    <div class="button-row">
+      <a href="MenClothing.html" class="button">Shop for Men</a>
+      <a href="WomenClothing.html" class="button">Shop for Women</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Contact Us</strong><br>
+        <a href="mailto:help@homekart.com">help@homekart.com</a><br>
+        Ph: 986546546</p>
+      <p><strong>Privacy Policy</strong></p>
+      <p><strong>Terms and Conditions</strong></p>
+      <div class="social">
+        <img src="ig.png" alt="Instagram">
+        <img src="fb.png" alt="Facebook">
+        <img src="t.png" alt="Twitter">
+      </div>
+      <p>Designed by Team Code</p>
+    </div>
+  </footer>
+
+</body>
+</html>
